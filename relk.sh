@@ -235,7 +235,6 @@ output {
     hosts => ["127.0.0.1:9200"]
     document_type => "%{[@metadata][type]}"
   }
-  stdout { codec => rubydebug }
 }
 EOL
 

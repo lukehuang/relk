@@ -173,7 +173,6 @@ output {
     index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
     document_type => "%{[@metadata][type]}"
   }
-  stdout { codec => rubydebug }
 }
 EOL
 sudo usermod -a -G adm logstash
